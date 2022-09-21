@@ -15,15 +15,22 @@ export default function AppEmoji(){
             ekta annonimous fn use kore oi data 
             recive kore korte hobe. karon fn body
             chara amra props rcv korte parbo na*/}
+
+            
             {/* {({addEmoji}) => <Text addEmoji={addEmoji}/>} */}
+
+
+            
             {/* ekhon jodi nested hoy. orthat inheritence e ekta jinis
                 er multiple parent extend kore seta jodi hoy seta
                 solve korbo evabe. given below -
             */}
+
+
             {({addEmoji}) =>
                 <Bracket>
                     {({addBracket})=> <Text addEmoji={addEmoji} addBracket={addBracket}/>}
-                </Bracket>}
+            </Bracket>}
         </Emoji> 
     )
 }
