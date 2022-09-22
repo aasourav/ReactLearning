@@ -1,7 +1,5 @@
 import { Component } from "react";
-import ClickCounter from "./HOC/ClickCounter";
-import HoverCounter from "./HOC/HoverCounter";
-
+import RenderProps from "./renderProps/appRnderProps";
 class App extends Component{
     //eta je react er component seta ekhon amake bojhate hobe
     // tai componnet extend korsi
@@ -15,8 +13,9 @@ class App extends Component{
                 {/* <ListAndKeys/> */}
                 {/* <Form/> */}
                 {/* <AppEmoji/> */}
-                <ClickCounter/>
-                <HoverCounter/>
+                {/* <ClickCounter/> */}
+                {/* <HoverCounter/> */}
+                <RenderProps/>
             </div>
         )
     }
