@@ -1,5 +1,6 @@
 import { Component } from "react";
-import AppEmoji from "./composition/AppEmoji";
+import ClickCounter from "./HOC/ClickCounter";
+import HoverCounter from "./HOC/HoverCounter";
 
 class App extends Component{
     //eta je react er component seta ekhon amake bojhate hobe
@@ -13,7 +14,9 @@ class App extends Component{
                 {/* <EventHandling/> */}
                 {/* <ListAndKeys/> */}
                 {/* <Form/> */}
-                <AppEmoji/>
+                {/* <AppEmoji/> */}
+                <ClickCounter/>
+                <HoverCounter/>
             </div>
         )
     }
