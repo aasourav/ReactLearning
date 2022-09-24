@@ -1,4 +1,5 @@
 import { Component } from "react";
+import AppContext from "./customContextAPI/AppContext";
 import RenderProps from "./renderProps/appRnderProps";
 class App extends Component{
     //eta je react er component seta ekhon amake bojhate hobe
@@ -16,6 +17,7 @@ class App extends Component{
                 {/* <ClickCounter/> */}
                 {/* <HoverCounter/> */}
                 <RenderProps/>
+                <AppContext/>
             </div>
         )
     }
