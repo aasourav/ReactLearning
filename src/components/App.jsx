@@ -1,4 +1,5 @@
 import { Component } from "react";
+import ParentComponent from "./contextAPI/ParentComponent";
 import AppContext from "./customContextAPI/AppContext";
 import RenderProps from "./renderProps/appRnderProps";
 class App extends Component{
@@ -18,6 +19,7 @@ class App extends Component{
                 {/* <HoverCounter/> */}
                 <RenderProps/>
                 <AppContext/>
+                <ParentComponent/>
             </div>
         )
     }
