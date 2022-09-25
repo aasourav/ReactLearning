@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Counter_useState from "./counter_useState";
-import UseEffect from "./useEffect";
+import AutoFocus from "./useRef";
 export default function StudentInfo(){
     const [name,setName] = useState('');
     const [id, setId] = useState('');
@@ -36,7 +36,8 @@ export default function StudentInfo(){
                 <input type="submit" value="Submit"/>
             </form>
             <Counter_useState/>
-            <UseEffect/>
+            {/* <UseEffect/> */}
+            <AutoFocus/>
         </div>
     )
 }
