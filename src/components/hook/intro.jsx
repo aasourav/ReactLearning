@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Counter from "./counter";
+import Counter_useState from "./counter_useState";
 export default function StudentInfo(){
     const [name,setName] = useState('');
     const [id, setId] = useState('');
@@ -34,7 +34,7 @@ export default function StudentInfo(){
                 <br/>
                 <input type="submit" value="Submit"/>
             </form>
-            <Counter/>
+            <Counter_useState/>
         </div>
     )
 }
