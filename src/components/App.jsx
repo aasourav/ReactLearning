@@ -1,7 +1,5 @@
 import { Component } from "react";
-import ParentComponent from "./contextAPI/ParentComponent";
-import AppContext from "./customContextAPI/AppContext";
-import RenderProps from "./renderProps/appRnderProps";
+import StudentInfo from "./hook/intro";
 class App extends Component{
     //eta je react er component seta ekhon amake bojhate hobe
     // tai componnet extend korsi
@@ -17,9 +15,10 @@ class App extends Component{
                 {/* <AppEmoji/> */}
                 {/* <ClickCounter/> */}
                 {/* <HoverCounter/> */}
-                <RenderProps/>
-                <AppContext/>
-                <ParentComponent/>
+                {/* <RenderProps/> */}
+                {/* <AppContext/> */}
+                {/* <ParentComponent/> */}
+                <StudentInfo/>
             </div>
         )
     }
