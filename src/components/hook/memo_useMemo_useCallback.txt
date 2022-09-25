@@ -1,0 +1,40 @@
+
+
+1. export default React.memo(fn_name)
+    = eta shouldComponentUpdate Lifecycle er moto kaj kore
+orthat component unchanged thakle se render hobe na.
+
+React.memo use korar poro se abar rerender hote pare
+bcz of amader fn gula ba object gular reference change 
+hoye(non premetive) jay tai memo bujhe ney chng hoise.
+so eta solve korar jonno amader use korte hobe.
+
+useCallback.
+
+2. use useCallback() fn ta kaj kore fn er vitore er dependany change hoy kina. means vitorer amader set kora
+variable er value change hoise kina. seta check korbe aloways.
+
+const increment = useCallback(()=>{
+    setCount1((prevCount)=> prevCount+1);
+}, ekhane_dependancyvalue dite hobe)
+jodi 2nd parameter e [] thake tahole se aloways remember
+korbe. ar variable dile (amader define kora) se  ota change
+hole se vule jabe and notun value ke mone rakhbe.
+
+
+3. useMemo() ei function ta handle kore function er return
+value handle kore. karon amader ekta universal funcion useCall kora thake tahole se always ota call hobe. and otar
+moddhe jodi expensive kaj hoy then return kore. so amader 
+eta handle korte hole useMemo() bebohar korte hobe.
+tahole se return value ta mone rakhbe jodi return value 
+change na hoy tahole se fn er kaj korbe na. otherwise se 
+kaj korbe.
+const iseven = useMemo(()=>{
+    while(i<1000000000) i = i+1;
+    return count1%2 ===1;
+}, [count1]) ekhane se count1 ke mone rakhse. rules useCallback er motoi.
+
+inside jsx:- 
+{iseven() ? 'even' : 'odd'} useMemo use er age.
+{iseven ? 'even' : 'odd'} useMemo use er pore. just ref
+disi karon ota useMemo er vitore call hoye ase.
