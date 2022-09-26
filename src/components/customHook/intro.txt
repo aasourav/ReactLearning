@@ -1,0 +1,2 @@
+we use custom hooks for sharing logic.
+we aslo can share hoc or contextapi
