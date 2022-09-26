@@ -1,5 +1,5 @@
 import { Component } from "react";
-import StudentInfo from "./hook/intro";
+import RouterApp from "./ReactRouter/RouterApp";
 class App extends Component{
     //eta je react er component seta ekhon amake bojhate hobe
     // tai componnet extend korsi
@@ -18,7 +18,8 @@ class App extends Component{
                 {/* <RenderProps/> */}
                 {/* <AppContext/> */}
                 {/* <ParentComponent/> */}
-                <StudentInfo/>
+                {/* <StudentInfo/> */}
+                <RouterApp/>
             </div>
         )
     }
