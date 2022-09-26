@@ -1,5 +1,6 @@
 import { useEffect, useRef } from 'react';
 import InputForwardRef from './inputForwardRef';
+import UseReducer2 from './useReduce2';
 
 export default function AutoFocus(){
     const inputRef = useRef(); //initialize
@@ -21,6 +22,8 @@ export default function AutoFocus(){
             sejonno amader forward ref use korte hobe. */}
             {/* see InputforwardRef.jsx file */}
             <InputForwardRef ref={inputRef} type="text" placeholder="name"/>
+            {/* <UseReducer/> */}
+            <UseReducer2/>
         </p>
     )
 }
